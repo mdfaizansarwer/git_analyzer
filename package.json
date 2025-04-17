@@ -1,0 +1,34 @@
+{
+  "name": "git-analyzer",
+  "version": "1.0.0",
+  "description": "CLI tool to analyze Git repositories",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "git",
+    "analyzer",
+    "cli"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.11.24",
+    "canvas": "^3.1.0",
+    "chart.js": "^4.4.2",
+    "commander": "^12.0.0",
+    "pdfkit": "^0.14.0",
+    "simple-git": "^3.22.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/pdfkit": "^0.13.7",
+    "ts-node": "^10.9.2"
+  },
+  "bin": {
+    "git-analyzer": "./dist/index.js"
+  }
+}
